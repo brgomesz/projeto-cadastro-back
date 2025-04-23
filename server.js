@@ -1,4 +1,5 @@
 import express from "express";
+import cors from 'cors'
 import pkg from '@prisma/client';
 const { PrismaClient } = pkg;
 
@@ -6,6 +7,8 @@ const prisma = new PrismaClient()
 
 const app = express();
 app.use(express.json())
+//alterar aqui quais paginas podem acessar meu back-end
+app.use(cors())
 
 app.post('/usuarios', async (req, res) =>{
 
