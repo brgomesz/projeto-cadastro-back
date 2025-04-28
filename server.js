@@ -16,7 +16,8 @@ app.post('/usuarios', async (req, res) =>{
         data:{
             email: req.body.email,
             name: req.body.name,
-            age: req.body.age
+            age: req.body.age,
+            city: req.body.city
         }
     })
 
@@ -41,7 +42,8 @@ app.put('/usuarios/:id', async (req, res) =>{
           data:{
               email: req.body.email,
               name: req.body.name,
-              age: req.body.age
+              age: req.body.age,
+              city: req.body.city
           }
       })
   

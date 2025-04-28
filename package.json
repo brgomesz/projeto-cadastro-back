@@ -8,6 +8,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "jest": "^29.7.0",
     "prisma": "^6.6.0"
   }
 }
